@@ -27,7 +27,7 @@ class Withdraw extends Component {
         user.transactions.push(`Withdrew $${this.state.withdraw} from account`);
         alert(`Your account now has $${user.amount}`)
         this.props.updateUser(user);
-        this.props.history.push('/transactions');
+        this.props.history.push('/options');
     }
 
     render(){
